@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
 @app.route('/') # http:// 
 def home():
-    return 'Hello, Flgggggggggggasgg!'
+    return render_template("home.html")
 
-@app.route('/about') # http://localhost:5000/about  
-def about():
-    return 'This is a URL Shortener sejjjjrviddddce'
+@app.route('/your-url') # http://localhost:5000/about  
+def your_url():
+    return render_template("your_url.html")
