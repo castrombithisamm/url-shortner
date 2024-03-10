@@ -2,11 +2,16 @@
 
 {% block title %}Page Not Found{% endblock %}
 
-{% block content %}
-<h1>Page Not Found</h1>
+{% block main %}
 
-<h2>Sorry, we couldn't find the page you were looking for.</h2>
-```
 
-<p><a href="{{ url_for('home') }}">Home</a></p>
+<div class="container text-center">
+  <h1 class="jumbotron-heading">Page Not Found</h1>
+  <p class="lead">We couldn't find what you are looking for. Come vist our homepage :)</p>
+  <p>
+    <a href="{{ url_for('home') }}"><button class="btn btn-primary my-2">Home</button></a>
+  </p>
+</div>
+
+
 {% endblock %}
